@@ -34,6 +34,7 @@
         <env name="DB_DATABASE" value="testing"/>
         <env name="DB_PORT" value="3306"/>
         <env name="DB_USERNAME" value="laravel"/>
+        <env name="DB_PASSWORD" value="password"/>
 
     </php>
 </phpunit>
