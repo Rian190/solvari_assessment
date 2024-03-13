@@ -19,7 +19,6 @@ class CreateReservationTest extends TestCase
     {
         $reservation = Reservation::factory()->make();
 
-        dump($reservation->toArray());
         $response = $this->post('api/reservation', $reservation->toArray());
 
 
