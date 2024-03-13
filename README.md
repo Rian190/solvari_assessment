@@ -1,13 +1,15 @@
 Getting started:
 1. Clone the project
-2. run `cp .env.example .env`
-3. read the sail documentation: https://laravel.com/docs/9.x/sail
+1. read the sail documentation: https://laravel.com/docs/11.x/sail
 
 - dont forget to configure a shell alias for sail
-- make sure to change db host to mysql
-
+- If you dont, you can use `vendor/bin/sail` instead of `sail`
 
 Running the project:
-1. create an alias in `~./bashrc` or `~./zshrc`: `alias=vendor/bin/sail`
-2. run `sail up -d`
-3. run `sail npm run dev`
+- sail up -d
+- sail php artisan migrate:fresh --seed
+- The admin bearer token is printed to your console.
+- visit [localhost/api/info](http://localhost/api/info) for more details on the api
+
+Running the tests:
+- sail test
